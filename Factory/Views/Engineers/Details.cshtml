@@ -3,9 +3,13 @@
 }
 
 @model Factory.Models.Engineer
+<div class="container">
+  <div class="jumbotron text-center">
 
 
 <h2>Engineer Details</h2>
+  </div>
+
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 <h3>@Html.DisplayNameFor(model => model.Status): @Html.DisplayFor(model => model.Status)</h3>
@@ -41,3 +45,4 @@
 <p>@Html.ActionLink("Back to list", "Index")</p>
 <p>@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId })</p>
 <p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId })</p>
+</div>

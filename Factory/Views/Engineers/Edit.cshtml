@@ -4,8 +4,11 @@
 
 @model Factory.Models.Engineer
 
+<div class="container">
+  <div class="jumbotron text-center">
 
 <h2>Edit</h2>
+  </div>
 
 <h4>Edit this engineer: @Html.DisplayFor(model => model.Name)</h4>
 
@@ -27,3 +30,4 @@
 <p>@Html.ActionLink("Add a Machine", "AddMachine", new { id = Model.EngineerId })</p>
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
+</div>
