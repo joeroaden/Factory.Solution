@@ -22,6 +22,10 @@
     @Html.Label("Select machine")
     @Html.DropDownList("MachineId")
 
+    @Html.Label("Date Licensed")
+    @Html.TextBoxFor(model => model.LicensedDate, new { type="date"})
+
+
     @Html.Label("Change status (idle/working")
     @Html.TextBoxFor(model => model.Status)
 

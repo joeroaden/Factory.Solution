@@ -17,7 +17,9 @@
     @Html.Label("Select Machine")
     @Html.DropDownList("MachineId")
 
-    
+    @Html.Label("Date Licensed")
+    @Html.TextBoxFor(model => model.LicensedDate, new { type="date"})
+
 
     @Html.Label("Add status(idle/working)")
     @Html.TextBoxFor(model => model.Status)
