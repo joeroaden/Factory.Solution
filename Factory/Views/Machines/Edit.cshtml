@@ -1,0 +1,28 @@
+@{
+  Layout = "_Layout";
+}
+
+@model AthleteTracker.Models.Machine
+
+<div class="container">
+  <div class="jumbotron text-center">
+
+<h2>Edit</h2>
+
+<h4>Edit this machine: @Html.DisplayFor(model => model.Name)</h4>
+  </div>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.MachineId)
+
+  @Html.LabelFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)
+
+  @Html.Label("Add status(operational/functioning/being repaired)")
+  @Html.TextBoxFor(model => model.Status)
+
+  <input type="submit" value="Save" />
+}
+<p>@Html.ActionLink("Back to list", "Index")</p>
+</div>
