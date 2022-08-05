@@ -8,7 +8,7 @@ namespace Factory.Models
     public DbSet<Engineer> Engineers { get; set; }
     public DbSet<EngineerMachine> EngineerMachine { get; set; }
 
-    public FactoryTrackerContext(DbContextOptions options) : base(options) { }
+    public FactoryContext(DbContextOptions options) : base(options) { }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

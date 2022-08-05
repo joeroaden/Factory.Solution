@@ -11,7 +11,7 @@
 
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(model => model.AthleteId)
+    @Html.HiddenFor(model => model.EngineerId)
 
     @Html.LabelFor(model => model.Name)
     @Html.EditorFor(model => model.Name)
@@ -24,6 +24,6 @@
 
     <input type="submit" value="Save" />
 }
-<p>@Html.ActionLink("Add a Machine", "AddMachine", new { id = Model.AthleteId })</p>
+<p>@Html.ActionLink("Add a Machine", "AddMachine", new { id = Model.EngineerId })</p>
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
