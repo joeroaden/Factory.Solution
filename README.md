@@ -2,7 +2,7 @@
 
 #### By _**Joe Roaden**_  
 
-#### _An MVC application to track/add machines and their enginners utilizing MySQLWorkbench database_  
+#### _An MVC application to track/add machines and their enginners utilizing MySQLWorkbench database and many to many relationships_  
 
 ---
 
